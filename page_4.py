@@ -142,9 +142,10 @@ with tab2:
 
                 else:
                     preds = model.predict(df_batch[model.feature_names_in_])
+                    preds_df = pd.DataFrame(preds, columns=['Predicted_CO_GT'])
 
-                    st.dataframe(preds)
-                    st.download_button("📥 Скачать результаты", preds.to_csv(index=False).encode('utf-8'),
+                    st.dataframe(preds_df)
+                    st.download_button("📥 Скачать результаты", preds_df.to_csv(index=False).encode('utf-8'),
                                "result.csv")
 
             except Exception as e:
