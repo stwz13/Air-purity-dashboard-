@@ -5,4 +5,4 @@ keras~=3.14.0
 scikit-learn~=1.8.0
 catboost~=1.2.10
 scikeras~=0.13.0
-tensorflow~=2.21.0
+tensorflow~=2.16.0
