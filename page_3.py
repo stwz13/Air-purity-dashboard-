@@ -1,10 +1,7 @@
-from tokenize import tabsize
-
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import plotly.graph_objects as go
-from jedi.inference.gradual.conversion import convert_names
+
 
 st.set_page_config(page_title="📈 Визуализации данных",
                    layout="wide")
@@ -114,7 +111,6 @@ with st.container(border=True):
     Вероятно, это связано с ростом трафика в холодное время года и метеорологическими особенностями рассеивания.
     """)
 
-    # Делим на 2 колонки для детального разбора газов
     col_season1, col_season2 = st.columns(2)
 
     with col_season1:

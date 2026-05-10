@@ -1,11 +1,7 @@
 import pickle
-from tokenize import tabsize
-
 import keras
 import streamlit as st
 import pandas as pd
-import joblib
-import numpy as np
 import __main__
 from keras.src import layers
 
@@ -33,7 +29,6 @@ def get_model():
     ])
     model.compile(optimizer='rmsprop', loss='mse')
     return model
-
 
 __main__.encode_dates = encode_dates
 __main__.get_model = get_model
