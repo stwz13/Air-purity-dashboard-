@@ -148,6 +148,6 @@ with tab2:
                                "result.csv")
 
             except Exception as e:
-                st.error(f"Ошибка при обработке файла: {e.message}")
+                st.error(f"Ошибка при обработке файла: {e}")
 
 
