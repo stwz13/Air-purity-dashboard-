@@ -135,7 +135,7 @@ with tab2:
 
         if st.button("🍃 Получить предсказание"):
             try:
-                missing = set(model.feature_names_in) - set(df_batch.columns)
+                missing = set(model.feature_names_in_) - set(df_batch.columns)
 
                 if missing:
                     st.error(f"В файле отсутствуют колонки {missing}")
