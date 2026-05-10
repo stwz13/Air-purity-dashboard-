@@ -3,10 +3,10 @@ import pandas as pd
 import plotly.express as px
 
 
-st.set_page_config(page_title="📈 Визуализации данных",
+st.set_page_config(page_title="Визуализации данных",
                    layout="wide")
 
-st.title("📈 Визуальный анализ зависимостей с помощью библиотеки Plotly")
+st.title("📈 Визуальный анализ зависимостей")
 
 
 df = pd.read_csv("datasets/air_to_plot.csv", index_col=0)
